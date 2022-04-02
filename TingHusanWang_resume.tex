@@ -1,0 +1,212 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://vincent.fishboneapps.com/}{\Large Ting-Hsuan Wang}} & Email : \href{mailto:tingsuan.wang@gmail.com}{tingsuan.wang@gmail.com} \\
+  \href{https://www.linkedin.com/in/twang443/}{https://www.linkedin.com/in/twang443} & Mobile : \href{tel:+13152438875}{+1-315-243-8875} \\
+\end{tabular*}
+
+%-----------Summary-----------------
+\section{Summary}
+\justifying{The intersection of technology and social good is my passion. Coming with 5 years of professional Software Development (Software Engineering) experience at many companies, I have a verifiable history of contributing directly to company growth and expansion throughout my career. Currently, I'm seeking summer intern opportunity to utilize my skills and abilities in a value-driven company that offers professional growth.}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {$IC^3$ Network}{Paris, France (Remote)}
+      {Software Engineer}{Jan 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Murmurations}
+          {(1) Designed and implemented a microservice with Go and Kubernetes, which helps validate store profiles against schemas and provides API for later aggregation. Currently, it has validated more than 10K store profiles. Examined company search API response time implemented with the full-text search mechanism in MongoDB, and combined it with Elasticsearch to rewrite the implementation in Go, ultimately increasing the speed \textbf{by 53\%}. (2) Architected a continuous build-test-deployment (CI/CD) system using GitHub Actions to support weekly releases and out-of-cycle releases, increasing development efficiency \textbf{by 30\%}. Also, add newman E2E tests, make sure the service works as expected. If not, rollback automatically.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dotech Technology Co., Ltd}{Taichung, Taiwan}
+      {Senior Software Engineer}{Sep 2020 - Nov 2021}
+      \resumeItemListStart
+        \resumeItem{BI \& SAP (GongCha, Taiwan)}
+          {Moved the services from DigitalOcean to AWS and connected the ERP central system with SAP by using RFC(remote function call). Also, we cooperated with Korean engineers and added a BI module in ERP for beverage shops, which increased company's revenue \textbf{by 20\%} that year.}
+        \resumeItem{Project Tracking System}
+          {Led a team with a frontend engineer and two backend engineers to develop company's internal system. I imported OKR concept into this system and increased the numbers of features and bug fixed \textbf{by 70\%}.}
+        \resumeItem{Corporation Identity Transformation}
+          {Led a team with a designer and a programmer to upgrade company's official website and related design document. Successfully attract \textbf{2 large companies} to sign the contract.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Shanghai Pu-Yu Software Development Co., Ltd}{Shanghai, China}
+      {Project Manager}{Nov 2018 - Mar. 2020}
+      \resumeItemListStart
+        \resumeItem{ERP Integration}
+          {Led 5 people to integrate Ordering system and storage system with ERP system. As a leader, I made a detailed and particular schedule for the timeline and endeavored to users’ demands mining. Provided technical supports in functional continuous iteration and upgrading.}
+        \resumeItem{Online Ordering System}
+          {Docked with store POS system, and multiple delivery and payment companies, Built a complete online to offline (O2O) ordering system.}
+      \resumeItemListEnd
+
+% --------Multiple Positions Heading------------
+    \resumeSubSubheading
+     {Junior PHP Engineer}{Aug 2017 - Oct 2018}
+     \resumeItemListStart
+        \resumeItem{FitnessFactory}
+          {Modernized the official website and made a complete CMS with Laravel framework.}
+     \resumeItemListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Syracuse University}{Syracuse, NY}
+      {Master of Science in Computer Science}{Aug 2021 -- Present}
+    \resumeSubheading
+      {Asia University}{Taichung, Taiwan}
+      {Bachelor of Arts in Foreign Languages and Literature;  GPA: 3.92}{Sep 2012 -- Jun 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vincent's Corner\href{https://vincent.fishboneapps.com/}{(\underline{Link})}}
+      {Recorded my learning about programming in over 100 articles since 2016. The website is made by Hexo.}
+    \resumeSubItem{GladLess Online E-commerce\href{https://gladless.com/}{(\underline{Link})}}
+      {Using Laravel to build the complete functions for E-commerce. (write more about detail))}
+    \resumeSubItem{Member System\href{https://member.tatcmf.org.tw/}{(\underline{Link})}}
+      {Using Laravel to build the membership system. The administrator can manage all members information with only one website.}
+    \resumeSubItem{Asia University Extracurricular Activities \& Service Learning Group Website\href{https://sls.asia.edu.tw/}{(\underline{Link1}, }\href{https://elective.easls.asia/}{\underline{Link2})}}
+      {Link1 is the official website I made, it's already attracted over 1,000,000 page views. Link2 is the system for students to select extracurricular activities and supports 3,000 students to select their curriculums online at the same time. Both of sites are developed and maintained by me since 2014.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Domains}{: Git, Github Action(CI/CD), Linux, Backend Engineering, Software Development, REST APIs, CI/CD}
+    }
+
+    \item{
+      \textbf{Backend}\\
+      {Languages: PHP, Go, Java, JavaScript, SQL, NoSQL, C/C++} \\
+      {Frameworks: Laravel, WordPress, gin, Hexo} \\
+      {Tools: ORMs, Swagger, Postman, ElasticSearch} \\
+      {Database: MySQL, MariaDB, PostgreSQL, MongoDB, Redis} \\
+      {DevOps: Docker, Kubernetes, LNMP, DigitalOcean, Alibaba Cloud, AWS} \\
+    }
+
+    \item{
+      \textbf{Frontend}\\
+      {Languages: HTML, CSS, jQuery} \\
+      {Tools: Webpack, ESLint, Package Manager(npm, yarn)}
+    }
+
+    \item{
+      \textbf{Miscellaneous}\\
+        {Payment Flow API: WeChat Pay, Alipay, Line Pay, Third-Party Pay} \\
+        {Logistics API: SF Express, 7-Eleven}
+    }
+  \resumeSubHeadingListEnd
+
+%--------HONORS & AWARDS------------
+\section{HONORS \& AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Outstanding Achievement Award (Technology R\&D Project)}{School Level}
+      {}{Mar. 2015}
+    \resumeSubheading
+      {Excellent Work Award of the 8th Dunhuang National College Cup}{National Level}
+      {Advanced University Group}{May. 2014}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
