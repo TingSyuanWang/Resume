@@ -1,4 +1,4 @@
 ## Quick start
 1. Install [Docker](https://www.docker.com/products/docker-desktop/).
-2. Execute `sh run.sh [TexFileName]`.<br>
-   For example, `sh run.sh TingHusanWang_resume.tex`
+2. Edit makefile from and replace `TingHusanWang_resume.tex` to your `TexFileName`.
+3. Execute`make`.
